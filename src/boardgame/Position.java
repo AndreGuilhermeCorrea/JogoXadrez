@@ -1,20 +1,14 @@
-package tabuleiro;
+package boardgame;
 
-public class Posicao {
-	
-	//encapsulamento dos campos
+public class Position {
 
 	private int row;
 	private int column;
 	
-	//construtor com argumentos
-	public Posicao(int row, int column) {
+	public Position(int row, int column) {
 		this.row = row;
 		this.column = column;
 	}
-	
-
-	//get e set
 
 	public int getRow() {
 		return row;
@@ -32,15 +26,13 @@ public class Posicao {
 		this.column = column;
 	}
 	
-	
-	//to string para impressão da posição na tela
-	@Override
-	public String toString() {
-		//impreção da linha(row) e coluna(column)
-		return row + ", " + column;
-		
-		
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.column = column;
 	}
 	
-	 
+	@Override
+	public String toString() {
+		return row + ", " + column;
+	}
 }
