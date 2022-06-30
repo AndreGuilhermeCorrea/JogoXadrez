@@ -1,5 +1,6 @@
 package app_xadrez;
-import tabuleiro.Posicao;
+
+import tabuleiro.Tabuleiro;
 
 public class Xadrez_classMain {
 
@@ -8,8 +9,8 @@ public class Xadrez_classMain {
 
 		System.out.println("Programando game Xadrez!!!");
 		
-		Posicao pos = new Posicao(3, 5);
-		System.out.println(pos);
+		Tabuleiro tabuleiro = new Tabuleiro(8, 8);
+		
 		
 		
 

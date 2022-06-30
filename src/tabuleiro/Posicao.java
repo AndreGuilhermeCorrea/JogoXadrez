@@ -1,6 +1,8 @@
 package tabuleiro;
 
 public class Posicao {
+	
+	//encapsulamento dos campos
 
 	private int row;
 	private int column;
